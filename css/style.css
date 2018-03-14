@@ -58,7 +58,7 @@ html, body {
 	overflow: hidden;
 	position: relative;
 }
-#header-background img {
+#header-background .header-img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
@@ -303,7 +303,7 @@ html, body {
 	#header-background {
 		min-height: 100vh;
 	}
-	#header-background img {
+	#header-background .header-img {
 		min-height: 100vh;
 		object-fit: cover;
 	}
