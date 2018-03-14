@@ -1,22 +1,5 @@
 jQuery(document).ready(function(){
 
-	// CAROUSEL
-	var $ = jQuery;
-	var $carousel = $('#top-carousel');
-	if($carousel.find('.carousel-inner > .item').size() <= 1) {
-		$carousel.find('.carousel-control').remove();
-		$carousel.find('.carousel-indicators').remove();
-	}
-
-	$carousel.find('.carousel-inner > .item').each(function(i) {
-		(i === 0) ? $carousel.find('.carousel-indicators').append("<li data-target='#"+$carousel.attr('id')+"' data-slide-to='"+i+"' class='active'></li>") : $carousel.find('.carousel-indicators').append("<li data-target='#"+$carousel.attr('id')+"' data-slide-to='"+i+"'></li>");
-		var src = $(this).find('img').attr('src');
-		if(src) {
-			$(this).css('background','url('+src+')');
-		}
-	});
-	$carousel.find('.carousel-inner > .item').first().addClass('active');
-
 	// NAVBAR
 	$('#menu-item li a').on('click', function() {
 		$('#menu-item li a').removeClass('active');
@@ -54,6 +37,7 @@ jQuery(document).ready(function(){
 		$('#menu').fadeOut('slow');
 	});
 
+	// WEATHER INFO
 	var getJSON = function(url) {
 		return new Promise(function(resolve, reject) {
 			var xhr = new XMLHttpRequest();
@@ -70,12 +54,10 @@ jQuery(document).ready(function(){
 			xhr.send();
 		});
 	};
-
-	getJSON('https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?id=1273043&units=metric&appid=ba4f52c9ce9c222b8a6490b4c3ae857d').then(
-		function(data) {
-			var temp = parseInt(data.main.temp);
-			$('#weather-info-temp').html(Math.ceil(temp)+'°C');
-			$('#weather-info-icon').append("<img src='http://openweathermap.org/img/w/"+data.weather[0].icon+".png'>")
-		});
+	var jsonUrl = 'https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?id=1273043&units=metric&appid=ba4f52c9ce9c222b8a6490b4c3ae857d';
+	getJSON(jsonUrl).then(function(data) {
+		$('#weather-info-temp').html(Math.ceil(parseInt(data.main.temp))+'°C');
+		$('#weather-info-icon').append("<img src='http://openweathermap.org/img/w/"+data.weather[0].icon+".png'>")
+	});
 
 });
