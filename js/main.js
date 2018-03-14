@@ -71,7 +71,7 @@ jQuery(document).ready(function(){
 		});
 	};
 
-	getJSON('https://cors.io/?http://api.openweathermap.org/data/2.5/weather?id=1273043&units=metric&appid=ba4f52c9ce9c222b8a6490b4c3ae857d').then(
+	getJSON('https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?id=1273043&units=metric&appid=ba4f52c9ce9c222b8a6490b4c3ae857d').then(
 		function(data) {
 			var temp = parseInt(data.main.temp);
 			$('#weather-info-temp').html(Math.ceil(temp)+'°C');
