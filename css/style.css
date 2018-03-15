@@ -106,6 +106,7 @@ div {
 }
 #header-logo img {
 	width: 30px;
+	-webkit-filter: drop-shadow(1px 1px 1px gray);
 }
 #header-logo p {
 	color: white;
@@ -115,6 +116,7 @@ div {
 	padding-top: 7px;
 	padding-left: 10px;
 	line-height: 1;
+	text-shadow: 1px 1px 2px gray;
 }
 #header-content .header-title {
 	margin-top: 30px;
@@ -454,6 +456,64 @@ a[href^="https://maps.google.com/maps"]{
 	height: 400px;
 }
 
+
+/* WE STARTS */
+.we-contents {
+	margin-top: 40px;
+}
+.spacer {
+	height: 30px;
+}
+.we-title {
+	line-height: 1;
+	font-weight: 500;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.we-subtitle {
+	line-height: 1.4;
+	font-weight: 300;
+	font-size: 14px;
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.we-content {
+	text-align: center;
+}
+.we-content .material-icons {
+	font-size: 50px;
+	color: gray;
+}
+.we-content-title {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+.we-content-content {
+	font-size: 12px;
+}
+.we-content-button {
+	font-size: 12px;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: thin solid black;
+	padding: 10px 20px;
+	line-height: 1;
+	margin-top: 10px;
+	outline: none;
+	transition: 0.3s;
+	letter-spacing: 1px;
+}
+.we-content-button:hover {
+	background-color: black;
+	border: thin solid black;
+	color: white;
+}
+/* WE ENDS */
+
 /* MEDIA QUERIES */
 @media (max-width: 1200px) {
     .col-lg-5ths {
@@ -461,8 +521,8 @@ a[href^="https://maps.google.com/maps"]{
         float: left;
     }
 	.container {
-		padding-top: 30px;
-		padding-bottom: 30px;
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 }
 @media (max-width: 992px) {
@@ -470,8 +530,8 @@ a[href^="https://maps.google.com/maps"]{
 		margin-top: 30px;
 	}
 	.container {
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 	.car-cont-con {
 		position: absolute;
