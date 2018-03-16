@@ -81,7 +81,7 @@ jQuery(document).ready(function(){
 		// WEATHER INFO
 		$('#weather-info-location').html(data.name);
 		$('#weather-info-temp').html(Math.ceil(parseInt(data.main.temp))+'°C');
-		$('#weather-info-icon').append("<img src='http://openweathermap.org/img/w/"+data.weather[0].icon+".png'>")
+		$('#weather-info-icon').append("<img src='https://openweathermap.org/img/w/"+data.weather[0].icon+".png'>")
 		// COORDS
 		$('#focus-coords').html(data.coord.lat + "'&nbsp;&nbsp;" + data.coord.lon+ "'");
 	});
