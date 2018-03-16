@@ -76,7 +76,7 @@ jQuery(document).ready(function(){
 			xhr.send();
 		});
 	};
-	var jsonUrl = 'https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?id=1205733&units=metric&appid=ba4f52c9ce9c222b8a6490b4c3ae857d';
+	var jsonUrl = 'https://api.openweathermap.org/data/2.5/weather?id=1205733&units=metric&appid=ba4f52c9ce9c222b8a6490b4c3ae857d';
 	getJSON(jsonUrl).then(function(data) {
 		// WEATHER INFO
 		$('#weather-info-location').html(data.name);
