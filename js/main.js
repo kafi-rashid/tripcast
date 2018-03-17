@@ -225,5 +225,7 @@ function showSteps(directionResult, markerArray, stepDisplay, map) {
 
 function attachInstructionText(stepDisplay, marker, text, map) {
 	google.maps.event.addListener(marker, 'click', function() {
+		stepDisplay.setContent(text);
+	    stepDisplay.open(map, marker);
 	});
 }
