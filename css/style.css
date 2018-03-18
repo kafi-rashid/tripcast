@@ -734,7 +734,7 @@ a[href^="https://maps.google.com/maps"]{
 	background-position: bottom;
 }
 #footer .container {
-	padding-bottom: 65px;
+	padding-bottom: 85px;
 }
 .newsletter-title strong {
 	font-size: 22px;
@@ -848,17 +848,20 @@ a[href^="https://maps.google.com/maps"]{
 		/*background-color: #f1ece0;*/
 	}
 	#header-logo {
-		left: 50px;
+		top: 20px;
+		left: 10px;
 	}
 	#header-content .header-title {
 		margin-top: 60px;
 	}
 	#menu-icon {
+		top: 15px;
 		right: 35px;
 	}
 	#header-content {
 		width: 100%;
 		padding: 50px;
+		padding: 50px 10px;
 	}
 	#header-background {
 		min-height: 100vh;
@@ -868,8 +871,8 @@ a[href^="https://maps.google.com/maps"]{
 		object-fit: cover;
 	}
 	#weather-info {
-		left: 50px;
-		bottom: 50px;
+		left: 10px;
+		bottom: 25px;
 	}
 	.focus-container {
 		display: unset;
