@@ -50,6 +50,12 @@ jQuery(document).ready(function(){
 		$('#menu').fadeOut('slow');
 	});
 
+	// NAVTAB
+	$('.places-name').click(function() {
+		$('.places-name').removeClass('active');
+		$(this).addClass('active');
+	});
+
 	// WEATHER INFO
 	var getJSON = function(url) {
 		return new Promise(function(resolve, reject) {
