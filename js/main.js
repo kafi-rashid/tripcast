@@ -27,15 +27,6 @@ jQuery(document).ready(function(){
 	// CLOUDS
 	var cloud_xpos = -100;
 	$(window).on("load resize", function(e) {
-		// console.log('cont: '+$('.car-cont-con').outerHeight()+' img: '+$('.car-img-con').outerHeight());
-		$('.car-cont-con').each(function() {
-			// $(this).outerHeight($(this).parent().find('.car-img-con').outerHeight());
-		})
-		var header_content_w = document.getElementById('header-content').offsetWidth;
-		$('#header-content').css({
-			'left': '50%',
-			'margin-left': -(header_content_w / 2) + 'px'
-		})
 		cloud_xpos = -($(window).width() / 10);
 	});
 	var cloud_scroll = 0;
