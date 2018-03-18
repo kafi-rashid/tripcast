@@ -456,7 +456,7 @@ a[href^="https://maps.google.com/maps"]{
 	width: 90px;
 	height: 40px;
 	position: absolute;
-	bottom: 20px;
+	bottom: 15px;
 	right: 20px;
 }
 .carousel-inner {
