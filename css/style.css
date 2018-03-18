@@ -778,8 +778,9 @@ a[href^="https://maps.google.com/maps"]{
 .newsletter-field:hover, .newsletter-field:focus {
 	background-color: rgba(255, 255, 255, 1);
 }
-
-
+.social-links {
+	margin-top: 18px;
+}
 .footer-child .social-links {
 	padding-top: 10px;
 }
