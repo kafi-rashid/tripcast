@@ -197,7 +197,7 @@ function calculateAndDisplayRoute(directionsDisplay, directionsService,
 		markerArray[i].setMap(null);
 	}
 	directionsService.route({
-		origin: 'madaripur, madaripur, bangladesh',
+		origin: 'khulna, khulna, bangladesh',
 		destination: 'kaptai, chittagong, bangladesh',
 		travelMode: 'DRIVING'
 	}, function(response, status) {
